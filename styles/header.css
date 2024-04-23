@@ -132,6 +132,99 @@
     color: var(--cor-laranja);
 }
 
+
+/* menu-hamburger */
+
+.cabecalho__menu-hamburguer {
+    width: 14px;
+    height: 10px; 
+    background-image: url("../assets/Menu2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+ }
+ 
+ .container__botao:checked~.container__rotulo>.cabecalho__menu-hamburguer{
+     background-image: url("../assets/MenuAberto.svg")
+ }
+ 
+ .container__botao:checked~.container__rotulo{
+     background: var(--cor-verde);
+ }
+ 
+ .container {
+     display: flex;
+     align-items:center;
+     background: var(--cor-de-fundo);
+     z-index: 9999;
+     
+ }
+ 
+ .container__imagem {
+     padding: 1em;
+ }
+ 
+ .lista-menu {
+     display: none;
+     position:absolute;
+     top: 21%;
+     width: 50vw;
+ }
+ 
+ .container__botao:checked ~ .lista-menu { 
+     display: block;
+ }
+ 
+ .lista-menu__titulo,
+ .lista-menu__item {
+    padding: 13px;
+    background-color: var(--cor-verde);
+ }
+ 
+ .lista-menu__titulo {
+     color: var(--cor-cinza-escuro);
+     font-weight: 600;
+ }
+ 
+ .lista-menu__link {
+     background: var(--cor-cinza-escuro);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+     
+ }
+ 
+ /*sumir com o checkbox*/
+ .container__botao {
+     display: none;  
+ }
+ 
+ .container__titulo {
+     display:none;
+ }
+ 
+ .opcoes {
+     display:none;
+ }
+ 
+ .container__texto {
+     display: none;
+ }
+ 
+ 
+ @media screen and (min-width: 1024px) {
+     .container__imagem-transparente {
+         display: none;
+     }
+ 
+     .cabecalho__menu-hamburguer {
+         display: none;
+     }
+     
+ }
+
+/* -------------------- */
+
 @media screen and (max-width: 980px) {
 
     .header-principal nav .input-search{
@@ -139,7 +232,7 @@
         width: 35px;
         min-height: 35px;
         height: 35px;
-        border-radius: 8px;
+        border-radius:8px;
         padding: 0;
         border: 1px solid #FFF;
         background-color: var(--cor-principal);
@@ -157,6 +250,10 @@
     
     .header-principal nav .search-lupa{
         display: block;
+    }
+
+    .header-principal nav a text-icons-loc {
+        display: none;
     }
 
 }
@@ -182,13 +279,12 @@
     .header-menu a {
         display: none;
     }
- 
 }
 
 @media screen and (max-width:600px) {
 
     .header-principal {
-        gap: 4rem;
+        gap: .9rem;
         margin-right: 3rem;
     }
 
@@ -199,6 +295,8 @@
     .header-principal nav a{
         font-size: .9rem;
     }
+
+    
 
 }
 

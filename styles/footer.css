@@ -12,6 +12,7 @@ hr {
 .rodape h2 {
     font-family: var(--font-logo);
     font-size: 2.5rem;
+    color: var(--cor-cinza-escuro)
 }
 
 .lista-rodape__titulo{
@@ -39,14 +40,14 @@ hr {
     }
 
     .lista-rodape__link {
-        color: var(--cinza);
+        color: var(--cor-cinza-escuro);
         text-decoration: none;
         margin-left: 0.6em;
     }
 
     .lista-rodape__titulo {
         font-size: 14px;
-        color: var(--cinza-claro);
+        color: var(--cor-cinza-escuro);
     }
 
     .rodape__titulo {
@@ -56,7 +57,7 @@ hr {
 
 @media screen and (min-width: 1728px) { 
     .lista-rodape {
-        border-left: 1px solid var(--cinza-claro);
+        border-left: 1px solid var(--cor-cinza-escuro);
         padding-left: 1em;
     }
 
