@@ -212,7 +212,7 @@
  }
  
  
- @media screen and (min-width: 1024px) {
+ @media screen and (min-width: 850px) {
      .container__imagem-transparente {
          display: none;
      }
@@ -254,11 +254,11 @@
 
     .header-principal nav a text-icons-loc {
         display: none;
+    }    
+
+    .header-menu {
+        width: 100%;
     }
-
-}
-
-
 
 @media screen and (max-width:850px) {
 
@@ -268,7 +268,7 @@
     }
 
     .header-titulo{
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .header-titulo img{
@@ -281,10 +281,12 @@
     }
 }
 
+    
+
 @media screen and (max-width:600px) {
 
     .header-principal {
-        gap: .9rem;
+        gap: .6rem;
         margin-right: 3rem;
     }
 
