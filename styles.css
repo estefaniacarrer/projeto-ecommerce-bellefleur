@@ -2,8 +2,10 @@
 @import url(./styles/header.css);
 @import url(./styles/banner.css);
 @import url(./styles/produtos.css);
-@import url(./styles/cadastro.css);
+@import url(./styles/contato.css);
 @import url(./styles/footer.css);
+@import url(./styles/login.css);
+@import url(./styles/cadastro.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
@@ -27,4 +29,8 @@ body{
     overflow-x: hidden;
     background-color: var(--cor-de-fundo);
     
+}
+
+.hide {
+    display:none;
 }
