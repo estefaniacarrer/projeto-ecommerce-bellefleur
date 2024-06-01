@@ -37,7 +37,7 @@
     font-size: 2.5rem;
     font-weight: 600;
     font-family: var(--font-logo);
-    margin-left: -20rem;
+    margin-left: -15rem;
 }
 
 .header-titulo-imagem {
@@ -293,10 +293,10 @@
 
     .nav-container {
         position: absolute;
-        top: calc(12% + 30px);
+        /* top: calc(12% + 30px); */
         left: 0;
         width: 100%;
-        z-index: 9999;
+        padding-top: 120px;
         
     }
 
@@ -329,9 +329,10 @@
 
     .nav-container {
         position:absolute;
-        top: calc(17% + 30px);
+        /* top: calc(17% + 30px); */
         left: 0;
         width: 100%;
+        padding-top: 60px;
         
     }
 
